@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+/coverage.data
+/coverage/
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -34,3 +37,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore application configuration
+/config/application.yml
