@@ -1,8 +1,8 @@
-<h1>Welcome</h1>
-
-<%= form_tag("/locations",  method: :post) do %>
-  <h1>User Location</h1>
+<div id="location">
+  <%= form_tag("/locations",  method: :post) do %>
+  <h2>User Location</h2>
   <p>Latitude, Longitude: </p>
-  <%= text_field_tag 'latlong', nil, :required => true %><br/>
-  <input type="submit" value="Submit">
-<% end %>
+  <%= text_field_tag 'latlong', nil, :required => true %><br/><br>
+  <input type="submit" value="Submit"><br><br>
+  <% end %>
+</div>
