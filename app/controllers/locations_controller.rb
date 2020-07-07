@@ -1,8 +1,4 @@
 class LocationsController < ApplicationController
-  def index
-    @location = Location.find(params[:id])
-  end
-
   def new
   end
 
@@ -14,6 +10,10 @@ class LocationsController < ApplicationController
                               state: @user_location.state })
     location.save
 
-    redirect_to "/locations"
+    redirect_to "/locations/#{location.id}"
+  end
+
+  def show
+    @location = Location.find(params[:id])
   end
 end
