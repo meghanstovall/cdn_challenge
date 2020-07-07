@@ -40,10 +40,9 @@ RSpec.describe "servers location", type: :feature do
                                   longitude: "-96.808891",
                                   country: "US",
                                   state: "Texas" })
-                                  require "pry"; binding.pry
 
     visit "/results"
 
-    expect(page).to have_content("Closest Location:")
+    expect(page).to have_content("Closest Location: Arizona, US")
   end
 end
