@@ -8,11 +8,11 @@ class LocationFacade
     @longitude = latlong.split(", ")[-1]
   end
 
-  def city
-    @location[3][:short_name]
+  def state
+    @location[-3][:long_name]
   end
 
-  def state
-    @location[5][:short_name]
+  def country
+    @location[-2][:short_name]
   end
 end
