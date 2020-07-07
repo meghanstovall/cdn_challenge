@@ -1,6 +1,6 @@
 class LocationService
-  def self.location(latitude, longitude)
-    self.get_json("/maps/api/geocode/json?latlng=#{latitude},#{longitude}&key=#{ENV['GOOGLE_API_KEY']}")[:results][0][:address_components]
+  def self.location(latlong)
+    self.get_json("/maps/api/geocode/json?latlng=#{latlong}&key=#{ENV['GOOGLE_API_KEY']}")[:results][0][:address_components]
   end
 
   private

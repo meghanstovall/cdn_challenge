@@ -1,7 +1,11 @@
 class LocationFacade
 
-  def initialize(latitude, longitude)
-    @location = LocationService.location(latitude, longitude)
+  attr_reader :latitude, :longitude
+
+  def initialize(latlong)
+    @location = LocationService.location(latlong)
+    @latitude = latlong.split(", ")[0]
+    @longitude = latlong.split(", ")[-1]
   end
 
   def city
