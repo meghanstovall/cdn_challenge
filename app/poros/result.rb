@@ -10,9 +10,13 @@ class Result
     distance1 = LocationService.distance(@location, @server1)
     distance2 = LocationService.distance(@location, @server2)
     if distance1 < distance2
-      @server1.state + ", " + @server1.country
+      @server1.name
     else
-      @server2.state + ", " + @server2.country
+      @server2.name
     end
+  end
+
+  def round_trip_time
+
   end
 end
