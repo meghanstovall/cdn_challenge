@@ -17,8 +17,6 @@ ActiveRecord::Schema.define(version: 2020_07_06_224231) do
 
   create_table "locations", force: :cascade do |t|
     t.string "name"
-    t.string "country"
-    t.string "state"
     t.string "latitude"
     t.string "longitude"
     t.datetime "created_at", precision: 6, null: false
