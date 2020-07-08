@@ -19,9 +19,11 @@ RSpec.describe "users location", type: :feature do
 
     click_button "Submit"
 
-    location = Location.last
+    location = Location.find_by(latitude: "39.742043")
+    server1 = Location.find_by(latitude: "33.448376")
+    server2 = Location.find_by(latitude: "41.619549")
 
-    expect(current_path).to eq("/results")
+    expect(current_path).to eq("/results/#{location.id}/servers/#{server1.id}/#{server2.id}")
     expect(Location.all.count).to eq(3)
 
     expect(page).to have_content("Closest Server: Arizona, US")
