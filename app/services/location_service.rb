@@ -4,7 +4,7 @@ class LocationService
   end
 
   def self.distance(location, server)
-    self.get_json("/maps/api/distancematrix/json?units=imperial&origins=#{location.state},#{location.country}&destinations=#{server.state},#{server.country}&key=#{ENV['GOOGLE_API_KEY']}")[:rows][0][:elements][0][:distance][:text][0...-3].to_i
+    self.get_json("/maps/api/distancematrix/json?units=imperial&origins=#{location.name}&destinations=#{server.name}&key=#{ENV['GOOGLE_API_KEY']}")[:rows][0][:elements][0][:distance][:text][0...-3].to_i
   end
 
   private
