@@ -1,1 +1,7 @@
-<h2>Closest Server: <%= @results.closest_location %></h2>
+<!-- Methods in result PORO called here to display the results -->
+
+<h2>Closest Server: <%= @results.closest_location.name %></h2>
+
+<h2>Round Trip Time: About <%= @results.round_trip_time %> milliseconds</h2>
+
+<h2>Maximum Bandwidth: About <%= @results.maximum_bandwidth %> bits</h2>
