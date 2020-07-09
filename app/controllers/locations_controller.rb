@@ -3,6 +3,7 @@ class LocationsController < ApplicationController
   end
 
   def create
+    #create and put three locations in the database
     user_location = LocationFacade.new(params[:latlong])
     location1 = LocationFacade.new(params[:server1])
     location2 = LocationFacade.new(params[:server2])
@@ -25,6 +26,8 @@ class LocationsController < ApplicationController
   end
 
   def results
+    # find three locations in database, send results variable to view
+    # to call calculation methods that are in the rsult PORO
     server1 = Location.find_by(id: params[:server1_id])
     server2 = Location.find_by(id: params[:server2_id])
     location = Location.find_by(id: params[:user_id])
