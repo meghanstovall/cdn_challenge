@@ -1,7 +1,7 @@
 ## Setup  
 ---
 - If you don't already have one, download a text editor
-- Clone this repo to your local machine with: `git clone git@github.com:meghanstovall/cdn_challenge.git`  
+- Clone this repo with: `git clone git@github.com:meghanstovall/cdn_challenge.git`  
 
 In your terminal:
 - cd into this root directory
