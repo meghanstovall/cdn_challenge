@@ -1,9 +1,10 @@
 ## Setup  
 ---
 - If you don't already have one, download a text editor
-- Clone this repo to your local machine with: `git clone git@github.com:meghanstovall/cdn_challenge.git`  
+
 
 In your terminal:
+- Clone this repo with: `git clone git@github.com:meghanstovall/cdn_challenge.git` 
 - cd into this root directory
 - install ruby - rbenv install 2.5.1
 - install postgres - brew install postgresql
