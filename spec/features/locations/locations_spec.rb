@@ -54,6 +54,7 @@ RSpec.describe "users location", type: :feature do
     visit "/locations/new"
 
     within '#location' do
+      # Denver, CO
       fill_in 'latlong', with: "39.742043, -104.991531"
       # Pheonix, AZ
       fill_in 'server1', with: "33.448376, -112.074036"
