@@ -2,6 +2,8 @@ class Result
 
   # result PORO where all calculations are made
 
+  attr_reader :location, :server1, :server2
+
   def initialize(location, server1, server2)
     @location = location
     @server1 = server1
