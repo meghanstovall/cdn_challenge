@@ -4,7 +4,7 @@
 
 
 In your terminal:
-- Clone this repo with: `git clone git@github.com:meghanstovall/cdn_challenge.git` 
+- Clone this repo with: `git clone git@github.com:meghanstovall/cdn_challenge.git`
 - cd into this root directory
 - install ruby - rbenv install 2.5.1
 - install postgres - brew install postgresql
